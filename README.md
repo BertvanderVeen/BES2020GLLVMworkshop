@@ -9,10 +9,9 @@ install.packages("mvabund")
 install.packages("gllvm")
 ```
 
-If you encounter any problems when using the <tt>gllvm</tt> R-package, please explore existing issues here: https://github.com/JenniNiku/gllvm. If your problem has not already been explored by someone else, feel free to post a new issue or use the discussion board in this repository.
+If you encounter any problems when using the <tt>gllvm</tt> R-package, please explore [existing issues in the github repository of the package](https://github.com/JenniNiku/gllvm/issues). If your problem has not already been explored by someone else, feel free to post a new issue or use the [discussion board](https://github.com/BertvanderVeen/BES2020GLLVMworkshop/discussions) in this repository.
 
-Further example material on using the <tt>gllvm</tt> R-package is available in the vignettes, and the reference manual, of the package:<br>
+Further example material on using the <tt>gllvm</tt> R-package is available in the vignettes, and the [reference manual](https://cran.r-project.org/web/packages/gllvm/gllvm.pdf), of the package:<br>
 https://cran.r-project.org/web/packages/gllvm/vignettes/vignette1.html <br>
-https://cran.r-project.org/web/packages/gllvm/vignettes/vignette2.html <br>
-https://cran.r-project.org/web/packages/gllvm/gllvm.pdf <br>
+https://cran.r-project.org/web/packages/gllvm/vignettes/vignette2.html
 
