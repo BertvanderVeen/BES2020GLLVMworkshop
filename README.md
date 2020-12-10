@@ -18,5 +18,7 @@ https://cran.r-project.org/web/packages/gllvm/vignettes/vignette2.html
 # Questions
 Any questions regarding the exercise material can be posted on the discussion board, or communicated over twitter using the #GLLVMs hashtag, directed [@vdVeenB](https://twitter.com/vdVeenB), [@J__Niku](https://twitter.com/J__Niku), [@samperrinNTNU](https://twitter.com/samperrinNTNU), or [@BobOHara](https://twitter.com/bobohara).
 
-# Recommended reading
--- to add
+# Some recommended reading
+\bibliography{lib}
+
+(Halvorsen 2012 available here: http://nhm2.uio.no/botanisk/nbf/temp/Sommerfeltia_35_20121206_PRESS.pdf)
