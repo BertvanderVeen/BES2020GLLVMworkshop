@@ -79,12 +79,18 @@ plot(fitp)
 plot(fitnb)
 
 # You could do these comparisons with Laplace method as well, using the code below, and it would give the same conclusion that NB distribution suits best:
-fitLAp <- gllvm(y=spider$abund, family = poisson(), method = "LA")
-fitLAnb <- gllvm(y=spider$abund, family = "negative.binomial", method = "LA")
-fitLAzip <- gllvm(y=spider$abund, family = "ZIP", method = "LA")
-AIC(fitLAp)
-AIC(fitLAnb)
-AIC(fitLAzip)
+# fitLAp <- gllvm(y=spider$abund, family = poisson(), method = "LA", seed = 123)
+# fitLAnb <- gllvm(y=spider$abund, family = "negative.binomial", method = "LA", seed = 123)
+# fitLAzip <- gllvm(y=spider$abund, family = "ZIP", method = "LA", seed = 123)
+# AIC(fitLAp)
+# [1] 1761.371
+# AIC(fitLAnb)
+# [1] 1506.862
+# AIC(fitLAzip)
+# [1] 1795.768
+# plot(fitLAp, which = 1:2)
+# plot(fitLAnb, which = 1:2)
+# plot(fitLAzip, which = 1:2)
 
 
 
