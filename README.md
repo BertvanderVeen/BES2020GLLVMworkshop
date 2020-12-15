@@ -11,9 +11,28 @@ install.packages("gllvm")
 
 If you encounter any problems when using the <tt>gllvm</tt> R-package, please explore [existing issues in the github repository of the package](https://github.com/JenniNiku/gllvm/issues). If your problem has not already been explored by someone else, feel free to post a new issue or use the [discussion board](https://github.com/BertvanderVeen/BES2020GLLVMworkshop/discussions) in this repository.
 
+# Workshop material
+All workshop material can be found in this repository, listed below.
+
+## Day 1 - With focus on model-based ordination
+1) [Background on Generalized Linear Latent Variable Models](https://github.com/BertvanderVeen/BES2020GLLVMworkshop/blob/main/Slides/day%201/BESWorkshopSlides_Day1_BertvV.pdf)
+2) [<tt>gllvm</tt> R-package](https://github.com/BertvanderVeen/BES2020GLLVMworkshop/blob/main/Slides/day%201/BESWorkshopSlides_Day1_JN.pdf)
+   - [Exercise in R](https://github.com/BertvanderVeen/BES2020GLLVMworkshop/blob/main/Exercise/day%201/ExercisesPart1.R)
+3) [Ecological interpretation of GLLVM results](https://github.com/BertvanderVeen/BES2020GLLVMworkshop/blob/main/Slides/day%201/BESWorkshopSlides_Day1_SamP.pdf)
+   - [Exercise in R](https://github.com/BertvanderVeen/BES2020GLLVMworkshop/blob/main/Exercise/day%201/Session3.R)
+
+## Day 2 - With focus on Joint Species Distribution Models
+1) [Background on Generalized Linear Latent Variable Models](https://github.com/BertvanderVeen/BES2020GLLVMworkshop/blob/main/Slides/day%202/BESWorkshopSlides_Day2_BertvV.pdf)
+2) [<tt>gllvm</tt> R-package](https://github.com/BertvanderVeen/BES2020GLLVMworkshop/blob/main/Slides/day%202/BESWorkshopSlides_Day2_JN.pdf)
+   - [Exercise in R](https://github.com/BertvanderVeen/BES2020GLLVMworkshop/blob/main/Exercise/day%202/ExercisesPart2.R)
+3) [Ecological interpretation of GLLVM results](https://github.com/BertvanderVeen/BES2020GLLVMworkshop/blob/main/Slides/day%202/BESWorkshopSlides_Day2_SamP.pdf)
+   - [Exercise in R](https://github.com/BertvanderVeen/BES2020GLLVMworkshop/blob/main/Slides/day%202/BESWorkshopSlides_Day2_SamP.pdf)
+
 Further example material on using the <tt>gllvm</tt> R-package is available in the vignettes, and the [reference manual](https://cran.r-project.org/web/packages/gllvm/gllvm.pdf), of the package:<br>
 https://cran.r-project.org/web/packages/gllvm/vignettes/vignette1.html <br>
-https://cran.r-project.org/web/packages/gllvm/vignettes/vignette2.html
+https://cran.r-project.org/web/packages/gllvm/vignettes/vignette2.html <br>
+https://cran.r-project.org/web/packages/gllvm/vignettes/vignette3.html <br>
+https://cran.r-project.org/web/packages/gllvm/vignettes/vignette4.html <br>
 
 # Questions
 Any questions regarding the exercise material can be posted on the discussion board, or communicated over twitter using the #GLLVMs hashtag, directed [@vdVeenB](https://twitter.com/vdVeenB), [@J__Niku](https://twitter.com/J__Niku), [@samperrinNTNU](https://twitter.com/samperrinNTNU), or [@BobOHara](https://twitter.com/bobohara).
