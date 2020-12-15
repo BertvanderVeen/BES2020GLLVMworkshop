@@ -44,7 +44,7 @@ Clark, J., Gelfand, A., Woodall, C., & Zhu, K. (2014). More than the sum of the 
 
 D'Amen, M., Mod, H., Gotelli, N., & Guisan, A. (2018). Disentangling biotic interactions, environmental filters, and dispersal limitation as drivers of species co-occurrence. Ecography, 41(8), 1233-1244.
 
-Halvorsen, R. (2012). A gradient analytic perspective on distribution modelling. Sommerfeltia, 35(1), 1–165. (http://nhm2.uio.no/botanisk/nbf/temp/Sommerfeltia_35_20121206_PRESS.pdf)
+[Halvorsen, R. (2012). A gradient analytic perspective on distribution modelling. Sommerfeltia, 35(1), 1–165.](http://nhm2.uio.no/botanisk/nbf/temp/Sommerfeltia_35_20121206_PRESS.pdf)
 
 Hui, F., Taskinen, S., Pledger, S., Foster, S., & Warton, D. (2015). Model-based approaches to unconstrained ordination. Methods in Ecology and Evolution, 6(4), 399-411.
 Hui, F., Warton, D., Ormerod, J., Haapaniemi, V., & Taskinen, S. (2017). Variational approximations for generalized linear latent variable models. Journal of Computational and Graphical Statistics, 26(1), 35–43.
