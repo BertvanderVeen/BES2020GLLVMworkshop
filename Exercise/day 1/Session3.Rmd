@@ -3,19 +3,18 @@ title: "Community Ecology With GLLVMs"
 author: "Sam Perrin"
 date: "Day One"
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Welcome to the first of two scripts looking at GLLVMs through an ecological lens. Today we'll focus largely on
-the use of ordinations, while tomorrow will focus a bit more on JSDMs. This script was written to be fully
-self-containing, and while the lecture slides that go with it add a bit of onfo, you should be able
-to run everything here independently. There's also an R markdown document that will have the figures produced
-by the scripts below.
+Welcome to the first of two scripts looking at GLLVMs through an ecological lens. Today we'll focus largely
+on the use of ordinations, while tomorrow will focus a bit more on JSDMs. This script was written to be
+fully self-containing, and while the lecture slides that go with it add a bit of onfo, you should be able
+to run everything here independently. There's also an R markdown document that will have the figures produced by the scripts below.
 
 We start by loading all the requisite packages.
 
@@ -25,16 +24,17 @@ library(dplyr)
 library(grDevices)
 ```
 
-The data we're using for this session was collected largely by the ECOSPAT Group at the University of Lausanne.
-It looks at co-occurrence patterns in different plants along an elevational gradient in the Swiss Alps. The original dataset can be found at https://doi.org/10.5061/dryad.8mv11, which also contains links to a fantastic paper by Manuela D'Amen, 
-Heidi Mod, Nicholas Gotelli and Antoine Guisan which uses the data, entitled "Disentangling biotic 
-interactions, environmental filters, and dispersal limitation as drivers of species co-occurrence". The elevational
-data we use here comes from SwissTopo.
+The data we're using for this session was collected largely by the ECOSPAT Group at the University of
+Lausanne. It looks at co-occurrence patterns in different plants along an elevational gradient in the Swiss
+Alps. The original dataset can be found at https://doi.org/10.5061/dryad.8mv11, which also contains links to
+a fantastic paper by Manuela D'Amen,Heidi Mod, Nicholas Gotelli and Antoine Guisan which uses the data,
+entitled "Disentangling biotic interactions, environmental filters, and dispersal limitation as drivers of
+species co-occurrence". The elevational data we use here comes from SwissTopo.
 
-As a very basic overview, the original data includes presence-absence data for 183 plants over 912 sites, and 
-the following environmental covariates. The dataset included below is a subset, so that this all runs a bit faster 
-during the workshop. Obviously subsetting like this isn't always recommended, but if you'd like to run it with 
-the full dataset that has also been included in the GitHUB.  
+As a very basic overview, the original data includes presence-absence data for 183 plants over 912 sites,
+and the following environmental covariates. The dataset included below is a subset, so that this all runs a 
+bit faster during the workshop. Obviously subsetting like this isn't always recommended, but if you'd like
+to run it with the full dataset that has also been included in the GitHUB.  
   
 These are our environmental covariates.  
   
@@ -55,23 +55,26 @@ Y <- WorkshopData$Y
 X <- WorkshopData$X
 ```
 
-For starters, let's run a basic gllvm using no environmental variables.
+For starters, let's run a basic gllvm using no environmental variables. Note that sd.errors
+is set to FALSE, since we're not really interested in the effect size of environmental covariates 
+in this particular session.
 
 
 ```{r firstRun, message=FALSE}
 time1 <- Sys.time()
-fit_base <- gllvm(Y, num.lv = 2, family = binomial(link="probit"))
+fit_base <- gllvm(Y, num.lv = 2, family = binomial(link="probit"), sd.errors = FALSE)
 Sys.time()-time1
 ```
 
-Before we look at our latent variables, let's have a look at collinearity.
+Before we look at our latent variables, let's have a look at collinearity. The following
+code shows any significant collinearity between our environmental covariates.
 
 ```{r collinear check, message=FALSE}
 source("http://www.sthda.com/upload/rquery_cormat.r")
 colin <- rquery.cormat(X, type = "flatten", graph = FALSE)
 ```
 ```{r collinear check 2}
-colin$r %>% filter(abs(cor) > 0.4)
+colin$r %>% filter(abs(cor) > 0.5)
 ```
 
 
@@ -115,17 +118,15 @@ for(i in 0:3){
 }
 ```
 
-
 Let's have a look at our AICc values.
 
 ``` {r AIC check}
-AICcs <- sapply(fit_list, function(X) {summary(X)$AICc})
-AICcs
+AICc <- sapply(fit_list, function(X) {summary(X)$AICc})
+data.frame(AICc, model= paste0("LV-",0:3))
 ```
 
-We can see that the best model here uses 1 latent variable. A model with 2 latent variables
-isn't TOO bad though, so let's use it for slightly better visualisation, and have a look at 
-how it compares to our remaining variables.
+We can see that the best model here uses 2 latent variables. Let's have a look at 
+how these variables compares to our remaining environmental covariates. 
 
 ``` {r second check}
 par(mfrow = c(2, 2), mar = c(4, 4, 2, 1))
@@ -140,8 +141,6 @@ for(i in 1:length(remaining_covariates)) {
          symbols = TRUE, s.colors = Colorsph, xlim = c(-1.2,1.2), ylim = (c(-1.2, 1.2)))
 }
 ```
-
-
 
 From this we can see that there is still a bit of variation explained by positive degree days,
 despite its collinearity with moisture index (and by elevation, but we'll focus on that tomorrow).
@@ -171,8 +170,8 @@ we may attribute variation to our latent variable that is the result of the envi
 </details>
 
 # Breakout questions
-What other sort of variables would serve as proxies to account for variation?  
-What's the difference between species associations and species interactions?  
+What is a species association?  
+If we accounted for all possible covariates producing environmental variation, would we still see species associations?
 
 # Species Associations
 
@@ -406,7 +405,7 @@ You can see that the species group together more clearly, as the effect of the l
 
 </details>  
   
-Lastly, just for a taste of tomorrow, let's check out a correlation plot
+Lastly, just for a taste of tomorrow, let's check out a co-occurrence plot.
 
 ``` {r correlation plot}
 colline_species <- WorkshopData$colline_species
@@ -416,8 +415,12 @@ corrplot(cr1[colline_species,colline_species], diag = FALSE, type = "lower",
          method = "square", tl.cex = 0.5, tl.srt = 45, tl.col = "red")
 ```
   
+The blue squares indicate positive associations, which means that the two species are positively
+associated. Red squares indicate the two species are unlikely to co-occur. Larger, darker 
+squares indicate stronger relationships.  
+    
   
-Have any extra questions? Get in touch with us via the ___________.
+Have any extra questions? Get in touch with us via the conference app!
 You can also contact me directly via email at sam.perrin@ntnu.no or
 on Twitter at @samperrinNTNU.
 
