@@ -8,6 +8,7 @@ install.packages("dplyr")
 install.packages("mvabund")
 install.packages("gllvm")
 ```
+If you encounter problems while installing any of the packages above (especially <tt>mvabund</tt> or <tt>gllvm</tt>, and you are using an old(er) R version, please try to update R. If after doing so you still encounter issues with the installation, please contact us.
 
 If you encounter any problems when using the <tt>gllvm</tt> R-package, please explore [existing issues in the github repository of the package](https://github.com/JenniNiku/gllvm/issues). If your problem has not already been explored by someone else, feel free to post a new issue or use the [discussion board](https://github.com/BertvanderVeen/BES2020GLLVMworkshop/discussions) in this repository.
 
