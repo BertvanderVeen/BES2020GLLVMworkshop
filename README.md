@@ -16,7 +16,7 @@ If you encounter any other problems while installing any of the packages above (
 If you encounter any problems when using the <tt>gllvm</tt> R-package, please explore [existing issues in the github repository of the package](https://github.com/JenniNiku/gllvm/issues). If your problem has not already been posted by someone else, feel free to post a new issue or use the [discussion board](https://github.com/BertvanderVeen/BES2020GLLVMworkshop/discussions) in this repository.
 
 # Workshop material
-All workshop material can be found in this repository, listed below.
+All workshop material can be found in this repository, listed below. If you would like to download all material at once, click the bright green button above (and select the bottom option: download zip).
 
 ## Day 1 - With focus on model-based ordination
 1) [Background on Generalized Linear Latent Variable Models](https://github.com/BertvanderVeen/BES2020GLLVMworkshop/blob/main/Slides/day%201/BESWorkshopSlides_Day1_BertvV.pdf)
