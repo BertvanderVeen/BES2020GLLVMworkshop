@@ -27,6 +27,7 @@ All workshop material can be found in this repository, listed below.
    - [Exercise in R](https://github.com/BertvanderVeen/BES2020GLLVMworkshop/blob/main/Exercise/day%202/ExercisesPart2.R)
 3) [Ecological interpretation of GLLVM results](https://github.com/BertvanderVeen/BES2020GLLVMworkshop/blob/main/Slides/day%202/BESWorkshopSlides_Day2_SamP.pdf)
    - [Exercise in R](https://github.com/BertvanderVeen/BES2020GLLVMworkshop/blob/main/Slides/day%202/BESWorkshopSlides_Day2_SamP.pdf)
+# [Wrap-up](https://github.com/BertvanderVeen/BES2020GLLVMworkshop/blob/main/Slides/BESWorkshopSlides_WRAP_BertvV.pdf)
 
 Further example material on using the <tt>gllvm</tt> R-package is available in the vignettes, and the [reference manual](https://cran.r-project.org/web/packages/gllvm/gllvm.pdf), of the package:<br>
 https://cran.r-project.org/web/packages/gllvm/vignettes/vignette1.html <br>
@@ -35,7 +36,7 @@ https://cran.r-project.org/web/packages/gllvm/vignettes/vignette3.html <br>
 https://cran.r-project.org/web/packages/gllvm/vignettes/vignette4.html <br>
 
 # Questions
-Any questions regarding the exercise material can be posted on the discussion board, or communicated over twitter using the #GLLVMs hashtag, directed [@vdVeenB](https://twitter.com/vdVeenB), [@J__Niku](https://twitter.com/J__Niku), [@samperrinNTNU](https://twitter.com/samperrinNTNU), or [@BobOHara](https://twitter.com/bobohara).
+Any questions regarding the exercise material can be posted on the discussion board, or communicated over twitter using the [#GLLVMs hashtag](https://twitter.com/search?q=GLLVMs&src=typed_query&f=live), directed [@vdVeenB](https://twitter.com/vdVeenB), [@J__Niku](https://twitter.com/J__Niku), [@samperrinNTNU](https://twitter.com/samperrinNTNU), or [@BobOHara](https://twitter.com/bobohara).
 
 # Some recommended reading
 [Blanchet, F., Cazelles, K., & Gravel, D. (2020). Co-occurrence is not evidence of ecological interactions. Ecology Letters, 23(7), 1050-1063.](https://onlinelibrary.wiley.com/doi/abs/10.1111/ele.13525)
