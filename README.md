@@ -39,6 +39,8 @@ https://cran.r-project.org/web/packages/gllvm/vignettes/vignette4.html <br>
 # Questions
 Any questions regarding the exercise material can be posted on the discussion board, or communicated over twitter using the [#GLLVMs hashtag](https://twitter.com/search?q=GLLVMs&src=typed_query&f=live), directed [@vdVeenB](https://twitter.com/vdVeenB), [@J__Niku](https://twitter.com/J__Niku), [@samperrinNTNU](https://twitter.com/samperrinNTNU), or [@BobOHara](https://twitter.com/bobohara).
 
+Alternatively, you can contract us by e-mail: bert.vanderveen@nibio.no, jenni.m.e.niku@jyu.fi, sam.perrin@ntnu.no, bob.ohara@ntnu.no
+
 # Some recommended reading
 [Blanchet, F., Cazelles, K., & Gravel, D. (2020). Co-occurrence is not evidence of ecological interactions. Ecology Letters, 23(7), 1050-1063.](https://onlinelibrary.wiley.com/doi/abs/10.1111/ele.13525)
 
