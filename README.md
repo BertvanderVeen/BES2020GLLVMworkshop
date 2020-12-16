@@ -19,14 +19,14 @@ All workshop material can be found in this repository, listed below.
 2) [<tt>gllvm</tt> R-package](https://github.com/BertvanderVeen/BES2020GLLVMworkshop/blob/main/Slides/day%201/BESWorkshopSlides_Day1_JN.pdf)
    - [Exercise in R](https://github.com/BertvanderVeen/BES2020GLLVMworkshop/blob/main/Exercise/day%201/ExercisesPart1.R)
 3) [Ecological interpretation of GLLVM results](https://github.com/BertvanderVeen/BES2020GLLVMworkshop/blob/main/Slides/day%201/BESWorkshopSlides_Day1_SamP.pdf)
-   - [Exercise in R](https://github.com/BertvanderVeen/BES2020GLLVMworkshop/blob/main/Exercise/day%201/Session3.R)
+   - [Exercise in R](https://github.com/BertvanderVeen/BES2020GLLVMworkshop/blob/main/Exercise/day%201/Session3_DayOne_SCRIPT.R)
 
 ## Day 2 - With focus on Joint Species Distribution Models
 1) [Background on Generalized Linear Latent Variable Models](https://github.com/BertvanderVeen/BES2020GLLVMworkshop/blob/main/Slides/day%202/BESWorkshopSlides_Day2_BertvV.pdf)
 2) [<tt>gllvm</tt> R-package](https://github.com/BertvanderVeen/BES2020GLLVMworkshop/blob/main/Slides/day%202/BESWorkshopSlides_Day2_JN.pdf)
    - [Exercise in R](https://github.com/BertvanderVeen/BES2020GLLVMworkshop/blob/main/Exercise/day%202/ExercisesPart2.R)
 3) [Ecological interpretation of GLLVM results](https://github.com/BertvanderVeen/BES2020GLLVMworkshop/blob/main/Slides/day%202/BESWorkshopSlides_Day2_SamP.pdf)
-   - [Exercise in R](https://github.com/BertvanderVeen/BES2020GLLVMworkshop/blob/main/Slides/day%202/BESWorkshopSlides_Day2_SamP.pdf)
+   - [Exercise in R](https://github.com/BertvanderVeen/BES2020GLLVMworkshop/blob/main/Exercise/day%202/Session3_DayTwo_SCRIPT.R)
 # [Wrap-up](https://github.com/BertvanderVeen/BES2020GLLVMworkshop/blob/main/Slides/BESWorkshopSlides_WRAP_BertvV.pdf)
 
 Further example material on using the <tt>gllvm</tt> R-package is available in the vignettes, and the [reference manual](https://cran.r-project.org/web/packages/gllvm/gllvm.pdf), of the package:<br>
