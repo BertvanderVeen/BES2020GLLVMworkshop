@@ -34,10 +34,13 @@ All workshop material can be found in this repository, listed below. If you woul
 # [Wrap-up](https://github.com/BertvanderVeen/BES2020GLLVMworkshop/blob/main/Slides/BESWorkshopSlides_WRAP_BertvV.pdf)
 
 Further example material on using the <tt>gllvm</tt> R-package is available in the vignettes, and the [reference manual](https://cran.r-project.org/web/packages/gllvm/gllvm.pdf), of the package:<br>
-https://cran.r-project.org/web/packages/gllvm/vignettes/vignette1.html <br>
-https://cran.r-project.org/web/packages/gllvm/vignettes/vignette2.html <br>
+https://jenniniku.github.io/gllvm/articles/ <br>
+https://jenniniku.github.io/gllvm/articles/vignette1.html <br>
+https://jenniniku.github.io/gllvm/articles/vignette2.html <br>
 https://jenniniku.github.io/gllvm/articles/vignette3.html <br>
 https://jenniniku.github.io/gllvm/articles/vignette4.html <br>
+https://jenniniku.github.io/gllvm/articles/vignette5.html <br>
+https://jenniniku.github.io/gllvm/articles/vignette6.html <br>
 
 # Questions
 Any questions regarding the exercise material can be posted on the discussion board, or communicated over twitter using the [#GLLVMs hashtag](https://twitter.com/search?q=GLLVMs&src=typed_query&f=live), directed [@vdVeenB](https://twitter.com/vdVeenB), [@J__Niku](https://twitter.com/J__Niku), [@samperrinNTNU](https://twitter.com/samperrinNTNU), or [@BobOHara](https://twitter.com/bobohara).
